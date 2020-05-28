@@ -1,6 +1,6 @@
 # Crypto Tool
 
-A tool to learn and play basic concept of cryptography
+A tool to play and learn basic concept of cryptography.
 
 ## Features
 
