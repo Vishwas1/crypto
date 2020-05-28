@@ -1,6 +1,6 @@
 # Crypto Tool
 
-A playground visual demo tool to learn and play with cryptography
+A tool to learn and play basic concept of cryptography
 
 ## Features
 
