@@ -21,6 +21,8 @@ A playground visual demo tool to learn and play with cryptography
 - The text which is to be hide, called PlainText
 - The hidden text is called CipherText
 
+![img](public/images/cyrptography.png)
+
 ## Encryption & Decryption
 
 ### Encryption
@@ -53,6 +55,15 @@ A playground visual demo tool to learn and play with cryptography
 
 
 ## Digital Signature
+
+
+## Refrences and thing to read
+
+- https://www.youtube.com/watch?v=8NgVGnX4KOw
+- https://www.youtube.com/watch?v=bBC-nXj3Ng4
+- https://blog.coincodecap.com/different-types-of-crypto-wallets/
+- https://cryptobook.nakov.com/cryptographic-hash-functions
+
 
 
 
