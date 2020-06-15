@@ -80,6 +80,14 @@ function decryptData (password, encrypted) {
   }
 
 
+module.exports = {
+  sha256hashStr,
+  encryptData,
+  decryptData,
+}
+
+/*
+
 const message = "Text may be any length you wish, no padding is required."
 const secretKey = "PassWord1@"
 const encryptedText = encryptData(secretKey, message)
@@ -92,5 +100,5 @@ console.log(`Encrypted text = ${encryptedText}`);
 const actuallMessage = decryptData(secretKey, encryptedText)
 console.log(`Plain text = ${actuallMessage}`)
 
-
+*/
 // https://github.com/aeternity/aepp-sdk-js/blob/f2088c405ff6071f6b809c279231a3dff40e6ffb/es/utils/crypto.js#L35
