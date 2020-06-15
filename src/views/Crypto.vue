@@ -40,18 +40,18 @@
               </mdb-card-header>
               <mdb-card-body>
                 <mdb-tab-content>
-                  <mdb-tab-pane class="fade" key="show1" v-if="active==0">
+                  <mdb-tab-pane class="fade" key="show0" v-if="active==0">
                     <div>
                       This is introduction
                     </div>
                   </mdb-tab-pane>
-                  <mdb-tab-pane class="fade" key="show2" v-if="active==1">
+                  <mdb-tab-pane class="fade" key="show1" v-if="active==1">
                     <Hash/>
                   </mdb-tab-pane>
                   <mdb-tab-pane class="fade" key="show2" v-if="active==2">
                     <Symmetric/>
                   </mdb-tab-pane>
-                  <mdb-tab-pane class="fade" key="show2" v-if="active==3">
+                  <mdb-tab-pane class="fade" key="show3" v-if="active==3">
                     <Asymmetric/>
                   </mdb-tab-pane>
                 </mdb-tab-content>
