@@ -33,14 +33,33 @@ npm run serve
 
 ![img](public/images/cyrptography.png)
 
+## Hashing
+
+### Hash Function
+
+- A function which transforms input data of arbitrary size (e.g. a text message) to a result of fixed size (e.g. 256 bits), which is called hash value (or hash code, message digest, or simply hash)
+- The process of calculating the hash (or digest) value is called hashing
+- Example of Hash algorithms: SHA-256, SHA3-256 etc.
+
+![img](public/images/hash.png)
+
+#### Properties
+
+- One-Way (or Irreversible)
+- Deterministic
+- Collision resistant
+
+![img](public/images/hash-prop.png)
+
+
 ## Encryption & Decryption
 
-### Encryption
+## Encryption
 
 - Process in which original data is convert into random or meaningless
 - Or, the process of hiding text
 
-### Decryption
+## Decryption
 
 - Process in which encrypted data (or meaningless data) is convert back to original text.
 - Or, the process of revealing original text.
@@ -60,11 +79,20 @@ npm run serve
 
 ![img](public/images/Screenshot-symmetric.png)
 
-## Hashing
-
-
-
 ## Digital Signature
+
+- A digital signature is equivalent to handwritten signature.
+    - Its a method to guarantees the integrity and authenticity of message which is sent
+- Serves three purposes
+    - Authentication: Provides receiver a reason to believe that message came from claimed sender.
+    - Integrity: The message was not corrupted/altered in transit.
+    - Non-repudiation: Once sent, the sender can not say that he did not send this message.
+- D method uses public key cryptography
+- How it works
+    - Sender can Signs the message using private key
+    - Receiver Verifies  the message using sender’s public key
+
+![img](public/images/ds.png)
 
 
 ## Refrences and thing to read
@@ -73,6 +101,7 @@ npm run serve
 - https://www.youtube.com/watch?v=bBC-nXj3Ng4
 - https://blog.coincodecap.com/different-types-of-crypto-wallets/
 - https://cryptobook.nakov.com/cryptographic-hash-functions
+- crypto-it.net/eng/theory/modes-of-block-ciphers.html
 
 
 

@@ -11,11 +11,21 @@
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
+    "aes-js": "^3.1.2",
     "axios": "^0.18.0",
+    "blake2b": "^2.1.3",
+    "blakejs": "^1.1.0",
     "bootstrap-vue": "^2.0.0-rc.11",
+    "bs58check": "^2.1.2",
+    "ed2curve": "^0.3.0",
+    "gh-pages": "^1.2.0",
+    "nacl-signature": "^2.0.3",
+    "rlp": "^2.2.5",
+    "sha.js": "^2.4.11",
+    "tweetnacl": "^1.0.3",
+    "tweetnacl-util": "^0.15.1",
     "vue": "^2.5.16",
-    "vue-router": "^3.0.1",
-    "gh-pages": "^1.2.0"
+    "vue-router": "^3.0.1"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^3.0.0-rc.10",
