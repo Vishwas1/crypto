@@ -5,7 +5,7 @@
 </style>
 
 <template>
-<div>
+<div class="row">
     <form action="#" class="col-md-8">
         <div class="form-group">
             <label class="floatLeft">Data:</label>
