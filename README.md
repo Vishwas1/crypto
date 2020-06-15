@@ -87,7 +87,7 @@ npm run serve
     - Authentication: Provides receiver a reason to believe that message came from claimed sender.
     - Integrity: The message was not corrupted/altered in transit.
     - Non-repudiation: Once sent, the sender can not say that he did not send this message.
-- D method uses public key cryptography
+- DS method uses public key cryptography
 - How it works
     - Sender can Signs the message using private key
     - Receiver Verifies  the message using sender’s public key
