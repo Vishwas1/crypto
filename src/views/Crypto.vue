@@ -34,26 +34,25 @@
                 <mdb-tab default class="card-header-tabs">
                   <mdb-tab-item :active="active==0" @click.native.prevent="active=0">Introduction</mdb-tab-item>
                   <mdb-tab-item :active="active==1" @click.native.prevent="active=1">Hashing</mdb-tab-item>
-                  <mdb-tab-item :active="active==1" @click.native.prevent="active=0">Symmetric Key Cryptography</mdb-tab-item>
-                  <mdb-tab-item :active="active==1" @click.native.prevent="active=1">Asymmetric Key Cryptography</mdb-tab-item>
+                  <mdb-tab-item :active="active==2" @click.native.prevent="active=2">Symmetric</mdb-tab-item>
+                  <mdb-tab-item :active="active==3" @click.native.prevent="active=3">Asymmetric</mdb-tab-item>
                 </mdb-tab>
               </mdb-card-header>
               <mdb-card-body>
                 <mdb-tab-content>
                   <mdb-tab-pane class="fade" key="show1" v-if="active==0">
-                    <mdb-card-title>Special title treatment</mdb-card-title>
-                    <mdb-card-text>With supporting text below as a natural lead-in to additional content.</mdb-card-text>
-                    <mdb-btn color="primary">go somewhere</mdb-btn>
+                    <div>
+                      This is introduction
+                    </div>
                   </mdb-tab-pane>
                   <mdb-tab-pane class="fade" key="show2" v-if="active==1">
-                    <mdb-card-title>Special title treatment</mdb-card-title>
-                    <mdb-card-text>With supporting text below as a natural lead-in to additional content.</mdb-card-text>
-                    <mdb-btn color="primary">go somewhere</mdb-btn>
+                    <Hash/>
                   </mdb-tab-pane>
-                  <mdb-tab-pane class="fade" key="show3" v-if="active==2">
-                    <mdb-card-title>Special title treatment</mdb-card-title>
-                    <mdb-card-text>With supporting text below as a natural lead-in to additional content.</mdb-card-text>
-                    <mdb-btn color="primary">go somewhere</mdb-btn>
+                  <mdb-tab-pane class="fade" key="show2" v-if="active==2">
+                    <Symmetric/>
+                  </mdb-tab-pane>
+                  <mdb-tab-pane class="fade" key="show2" v-if="active==3">
+                    <Asymmetric/>
                   </mdb-tab-pane>
                 </mdb-tab-content>
               </mdb-card-body>
@@ -79,7 +78,10 @@
 <script>
 
 // @ is an alias to /src
-// import Display from '@/components/Display.vue'
+import Display from '@/components/Display.vue'
+import Hash from '@/components/Hash.vue'
+import Asymmetric from '@/components/Asymmetric.vue'
+import Symmetric from '@/components/Symmetric.vue'
 // import axios from 'axios'
 import { mdbContainer,  mdbRow, mdbCol, mdbBtn, mdbCard, mdbCardTitle, mdbCardText, mdbCardFooter, mdbCardBody, mdbCardHeader, mdbListGroup, mdbListGroupItem, mdbNavItem, mdbCardGroup, mdbIcon, mdbFooter, mdbTab, mdbTabItem, mdbTabContent, mdbTabPane } from 'mdbvue';
 
@@ -105,12 +107,23 @@ import { mdbContainer,  mdbRow, mdbCol, mdbBtn, mdbCard, mdbCardTitle, mdbCardTe
       mdbTab,
       mdbTabItem,
       mdbTabContent,
-      mdbTabPane
+      mdbTabPane,
+      Hash,
+      Asymmetric,
+      Symmetric
     },
     data(){
       return {
         active: 0
       };
+    },
+    created(){
+
+    },
+    methods: {
+      gotosubpage: (id) => {
+          this.$router.push(`${id}`);
+      }
     }
   }
 
