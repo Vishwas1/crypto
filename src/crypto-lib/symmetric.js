@@ -84,6 +84,7 @@ module.exports = {
   sha256hashStr,
   encryptData,
   decryptData,
+  blakeHash
 }
 
 /*

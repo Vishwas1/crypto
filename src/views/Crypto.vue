@@ -16,16 +16,8 @@
   width: 100%;
 }
 </style>
-
 <template>
-
 <div class="home">
-    <!-- <div class="vue-logo-back">
-        <img src="../assets/logo.png" width="100px" height="100px">
-    </div> -->
-    <div class="page-header">
-
-    </div>
     <div class="col-md-8 centeralign">
       <mdb-container>
           <mdb-row class="mt-12">
@@ -38,7 +30,7 @@
                   <mdb-tab-item :active="active==3" @click.native.prevent="active=3">Asymmetric</mdb-tab-item>
                 </mdb-tab>
               </mdb-card-header>
-              <mdb-card-body>
+              <mdb-card-body style="min-height: 484px">
                 <mdb-tab-content>
                   <mdb-tab-pane class="fade" key="show0" v-if="active==0">
                     <div>
