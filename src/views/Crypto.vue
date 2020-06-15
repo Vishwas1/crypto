@@ -15,6 +15,7 @@
 .fullbody {
   width: 100%;
 }
+
 </style>
 <template>
   <div class="home">
@@ -22,7 +23,7 @@
       <b-card no-body style="padding: 20px">
         <b-tabs content-class="mt-3">
           <b-tab title="Introduction" active>
-            <p>This is introduction</p>
+            <Introduction/>
           </b-tab>
           <b-tab title="Hashing">
             <Hash />
@@ -43,12 +44,14 @@
 import Hash from "@/components/Hash.vue";
 import Asymmetric from "@/components/Asymmetric.vue";
 import Symmetric from "@/components/Symmetric.vue";
+import Introduction from "@/components/Introduction.vue";
 export default {
   name: "PanelPage",
   components: {
     Hash,
     Asymmetric,
-    Symmetric
+    Symmetric,
+    Introduction
   },
   data() {
     return {
