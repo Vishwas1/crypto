@@ -19,6 +19,7 @@
     "bs58check": "^2.1.2",
     "ed2curve": "^0.3.0",
     "gh-pages": "^1.2.0",
+    "mdbvue": "^6.7.1",
     "nacl-signature": "^2.0.3",
     "rlp": "^2.2.5",
     "sha.js": "^2.4.11",

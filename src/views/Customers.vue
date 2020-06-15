@@ -1,5 +1,4 @@
 <style scoped>
-
 .addmargin {
     margin-top: 10px;
     margin-bottom: 10px;
@@ -8,19 +7,13 @@
 .vue-logo-back {
     background-color: black;
 }
-
 </style>
 
 <template>
 
 <div class="home">
-    <!-- <div class="vue-logo-back">
-        <img src="../assets/logo.png" width="100px" height="100px">
-    </div> -->
-    <div class="col-md-6 centeralign">
-        <!-- <p>This Page Displays a list of customers</p>
-        <p>Clicking on a Card Displays the name below. This is to demonstrate passing data from parent to child component</p>
-        <p>"Click for more details" Redirects to a new page which displays the customer information</p> -->
+    <div class="col-md-8 centeralign">
+        <hr>
         <div class="card centeralign addmargin" style="width: 18rem;" v-for="customer in customerlist" :key="customer.id">
             <div class="card-body" v-on:click="setSelectedCustomer(customer.name)">
                 <h5 class="card-title">{{customer.name}}</h5>
