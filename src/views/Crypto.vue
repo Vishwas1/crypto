@@ -70,15 +70,13 @@
             </div>
         </div> -->
     </div>
-    <Display v-if="selectedCustomer!=''" :selectedCustomer="selectedCustomer" />
+    <!-- <Display v-if="selectedCustomer!=''" :selectedCustomer="selectedCustomer" /> -->
 </div>
 
 </template>
 
 <script>
 
-// @ is an alias to /src
-import Display from '@/components/Display.vue'
 import Hash from '@/components/Hash.vue'
 import Asymmetric from '@/components/Asymmetric.vue'
 import Symmetric from '@/components/Symmetric.vue'

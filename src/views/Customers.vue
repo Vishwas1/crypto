@@ -24,7 +24,7 @@
             </div>
         </div>
     </div>
-    <Display v-if="selectedCustomer!=''" :selectedCustomer="selectedCustomer" />
+    <!-- <Display v-if="selectedCustomer!=''" :selectedCustomer="selectedCustomer" /> -->
 </div>
 
 </template>
@@ -51,19 +51,19 @@ export default {
     data() {
         return {
             customerlist: [],
-            selectedCustomer: ""
+            // selectedCustomer: ""
         }
     },
     components: {
         Display
     },
     methods: {
-        setSelectedCustomer: function(name) {
-            this.selectedCustomer = name;
-        },
-        goToDetailsPage: function(id) {
-            this.$router.push("/customerdetails/"+id);
-        }
+        // setSelectedCustomer: function(name) {
+        //     this.selectedCustomer = name;
+        // },
+        // goToDetailsPage: function(id) {
+        //     this.$router.push("/customerdetails/"+id);
+        // }
     }
 }
 
