@@ -17,7 +17,7 @@
 - The text which is to be hide, called PlainText
 - The hidden text is called CipherText
 
-![img](public/images/cyrptography.png)
+![img](../public/images/cyrptography.png)
 
 ## Hashing
 
@@ -27,7 +27,7 @@
 - The process of calculating the hash (or digest) value is called hashing
 - Example of Hash algorithms: SHA-256, SHA3-256 etc.
 
-![img](public/images/hash.png)
+![img](../public/images/hash.png)
 
 #### Properties
 
@@ -35,7 +35,7 @@
 - Deterministic
 - Collision resistant
 
-![img](public/images/hash-prop.png)
+![img](../public/images/hash-prop.png)
 
 
 ## Encryption & Decryption
@@ -55,7 +55,7 @@
 
 - Encrypt and Decrypt data with the same key, secret key
 
-![img](public/images/Screenshot-asymmetric.png)
+![img](../public/images/Screenshot-asymmetric.png)
 
 ## Asymmetric Key Cryptography
 
@@ -63,7 +63,7 @@
     - Public Key: Used for encryption 
     - Private Key: Used for decryption
 
-![img](public/images/Screenshot-symmetric.png)
+![img](../public/images/Screenshot-symmetric.png)
 
 ## Digital Signature
 
@@ -78,7 +78,7 @@
     - Sender can Signs the message using private key
     - Receiver Verifies  the message using sender’s public key
 
-![img](public/images/ds.png)
+![img](../public/images/ds.png)
 
 
 ## Refrences and thing to read
