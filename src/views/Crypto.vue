@@ -34,6 +34,9 @@
           <b-tab title="Asymmetric">
             <Asymmetric />
           </b-tab>
+          <b-tab title="Zero Knowledge Proof">
+            <ZKP />
+          </b-tab>
         </b-tabs>
       </b-card>
     </div>
@@ -45,13 +48,15 @@ import Hash from "@/components/Hash.vue";
 import Asymmetric from "@/components/Asymmetric.vue";
 import Symmetric from "@/components/Symmetric.vue";
 import Introduction from "@/components/Introduction.vue";
+import ZKP from "@/components/zkp.vue";
 export default {
   name: "PanelPage",
   components: {
     Hash,
     Asymmetric,
     Symmetric,
-    Introduction
+    Introduction,
+    ZKP
   },
   data() {
     return {
