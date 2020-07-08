@@ -7,8 +7,7 @@ const asymm = require('./asymmetric')
 
 
 const getIteratedHash = (number, data) => {
-    if(number == 0) throw new Error('Invalid counter')
-    if(number == 1) return sha256hashStr(data);
+    if(number <= 0) return data
     return getIteratedHash(--number, sha256hashStr(data))
 }
 
@@ -18,7 +17,7 @@ const generateProof = (actualAge, ageToProof) => {
     ageToProof = parseInt(ageToProof);
     const randomString = asymm.generateKeyPair().publicKey;
     return {
-        proof: getIteratedHash(1+actualAge, randomString),
+        proof: getIteratedHash(1+ actualAge, randomString),
         challange: getIteratedHash(1+ actualAge - ageToProof, randomString),
     }
 }
