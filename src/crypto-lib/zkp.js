@@ -25,7 +25,7 @@ const generateProof = (actualAge, ageToProof) => {
 const verifyProof = (ageToProof, provingKit) => {
     const { challange, proof } = provingKit;
     if(!challange || !proof) throw new Error('Invalid proving kit');
-    if(challange.indexOf('random_') > 0) return false
+    if(challange.indexOf('random_') >= 0) return false
     const temp_proof = getIteratedHash(ageToProof, challange)
     if(temp_proof === proof) return true
     return false
