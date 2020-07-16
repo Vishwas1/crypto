@@ -2,6 +2,11 @@
 
 A tool to play and learn basic concept of cryptography. Checkout the playgroung [here](https://vishwas1.github.io/crypto/index.html#/crypto)
 
+## Resources
+
+- [Practical book about cryptography for developers](https://cryptobook.nakov.com/) - A book
+- [Benchmarking Framework ZKP frameworks](https://docs.zkproof.org/pages/standards/accepted-workshop3/proposal-benchmarking.pdf) - Paper
+
 ## 
 
 ```bash
