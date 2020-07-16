@@ -5,7 +5,9 @@ A tool to play and learn basic concept of cryptography. Checkout the playgroung 
 ## Resources
 
 - [Practical book about cryptography for developers](https://cryptobook.nakov.com/) - A book
+- [Practical Cryptography With Go](https://leanpub.com/gocrypto/read#leanpub-auto-chapter-5-digital-signatures) - A book
 - [Benchmarking Framework ZKP frameworks](https://docs.zkproof.org/pages/standards/accepted-workshop3/proposal-benchmarking.pdf) - Paper
+-
 
 ## 
 
