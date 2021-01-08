@@ -37,7 +37,7 @@
                       </p>
                       <hr>
                       <p>
-                        We used the concept of <a href="https://en.wikipedia.org/wiki/Hash_chain">hash chaining</a> for implementation. The implementation is inspired from <a href="https://www.stratumn.com/thinking/zero-knowledge-proof-of-age-using-hash-chains/" target="_blank">this</a> and <a href="https://labs.imaginea.com/zero-knowledge-proof-of-age/" target="_blank">this</a> blog posts.
+                        We used the concept of <a href="https://en.wikipedia.org/wiki/Hash_chain">hash chaining</a> for implementation. The implementation is inspired from <a href="https://www.stratumn.com/thinking/zero-knowledge-proof-of-age-using-hash-chains/" target="_blank">this</a> 
                       </p>
                     </div>
                   </form>
