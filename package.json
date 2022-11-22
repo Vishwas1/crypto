@@ -32,7 +32,7 @@
     "@vue/cli-plugin-babel": "^3.0.0-rc.10",
     "@vue/cli-plugin-eslint": "^3.0.0-rc.10",
     "@vue/cli-plugin-unit-mocha": "^3.0.0-rc.10",
-    "@vue/cli-service": "^3.0.0-rc.10",
+    "@vue/cli-service": "^5.0.8",
     "@vue/test-utils": "^1.0.0-beta.20",
     "chai": "^4.1.2",
     "vue-template-compiler": "^2.5.16"
