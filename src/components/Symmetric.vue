@@ -15,20 +15,15 @@
         <form action="#" class="col-md-6">
           <div class="form-group">
             <label class="floatLeft">Secret Key:</label>
-            <input type="text" v-model="secretkey" class="form-control" />
+            <input type="password" v-model="secretkey" class="form-control" />
           </div>
           <div class="form-group">
             <label class="floatLeft">Plain Text:</label>
             <textarea class="form-control" v-model="plaintext" rows="8" cols="50"></textarea>
           </div>
           <div class="form-group floatLeft">
-            <button
-              type="button"
-              data-toggle="modal"
-              ref="encrypt"
-              @click="operation('encrypt')"
-              class="btn btn-primary"
-            >Encrypt</button>
+            <button type="button" data-toggle="modal" ref="encrypt" @click="operation('encrypt')"
+              class="btn btn-primary">Encrypt</button>
           </div>
         </form>
         <form action="#" class="col-md-6">
@@ -37,13 +32,8 @@
             <textarea class="form-control" v-model="ciphertext" rows="9" cols="50"></textarea>
           </div>
           <div class="form-group floatLeft">
-            <button
-              type="button"
-              data-toggle="modal"
-              ref="decrypt"
-              @click="operation('decrypt')"
-              class="btn btn-primary"
-            >Decrypt</button>
+            <button type="button" data-toggle="modal" ref="decrypt" @click="operation('decrypt')"
+              class="btn btn-primary">Decrypt</button>
           </div>
         </form>
       </div>
@@ -64,10 +54,10 @@ export default {
     };
   },
   methods: {
-    calculateHash: function() {
+    calculateHash: function () {
       return symmetric.sha256hashStr(this.plaintext);
     },
-    operation: function(op) {
+    operation: function (op) {
       try {
         let res = "";
         if (this.secretkey) {
@@ -108,5 +98,3 @@ export default {
   }
 };
 </script>
-
-
